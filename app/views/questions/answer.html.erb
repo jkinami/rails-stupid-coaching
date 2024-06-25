@@ -1,0 +1,20 @@
+<%=
+question = params[:question]
+question
+case
+when question == "I am going to work"
+  "Great!"
+when question[-1] == "?"
+  "Silly question, get dressed and go to work!"
+else
+  "I don't care, get dressed and go to work!"
+end
+
+%>
+
+<%= link_to "Ask another question", ask_path %>
+
+<%#
+If the message is I am going to work, the coach will answer Great!
+If the message has a question mark ? at the end, the coach will answer Silly question, get dressed and go to work!.
+Otherwise the coach will answer I don't care, get dressed and go to work! %>

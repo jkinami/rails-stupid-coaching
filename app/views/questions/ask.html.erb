@@ -1,0 +1,15 @@
+<%# <form action="/answer" data-turbo="false">
+  <input type="text" name="question">
+  <input type="submit" value="Ask!">
+</form> %>
+
+<div class="w-25 p-3">
+  <p>Ask your coach anything</p>
+  <form action="/answer">
+    <div class="mb-3">
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="question">
+      <div id="emailHelp" class="form-text">Ask nicely please.</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Ask</button>
+  </form>
+</div>
